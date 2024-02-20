@@ -11,7 +11,7 @@ import (
 var testInit bool
 
 func init() {
-	flag.BoolVar(&testInit, "test", false, "initialize test mode without serving")
+	flag.BoolVar(&testInit, "test", true, "initialize test mode without serving")
 	flag.Parse()
 
 	os.Setenv("TZ", "Asia/Jakarta")
